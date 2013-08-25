@@ -1,0 +1,180 @@
+body {
+  padding: 70px 0px 0px 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* Splash Page -----------------------------------------------------*/
+.main-page {
+	text-align:center;
+}
+	.main-page h1 {
+		font-family: 'Frijole', cursive;
+		font-size: 40px;
+	}
+
+	.main-page img {
+		width: 200px;
+	}
+
+
+/* Nav Bar Header -------------------------------------------------- */
+.nav-title {
+	font-family: 'Frijole', cursive;
+	font-size: 26px;
+}
+
+.nav-items {
+	font-family: 'Economica', sans-serif;
+	font-size: 20px;
+}
+
+
+/* To Do List Content ---------------------------------------------- */
+.todo-content {
+
+}
+
+	.todo-content h2 {
+		font-family: 'Rock Salt', cursive;
+		font-size: 24px;
+	}
+
+	.todo-content .todo-items {
+		font-family: 'Handlee', cursive;
+		font-size: 30px;
+	}
+
+/* Completed Content ------------------------------------------------ */
+.completed-content {
+
+}
+
+	.completed-content h2 {
+		font-family: 'Rock Salt', cursive;
+		font-size: 24px;
+	}
+
+	.completed-content .completed-items {
+		font-family: 'Handlee', cursive;
+		font-size: 30px;		
+	}
+
+
+/* About Page Content ----------------------------------------------- */
+.about-page {
+	text-align:center;
+}
+	.about-page h2 {
+		font-family: 'Frijole', cursive;
+		font-size: 22px;
+	}
+
+	.about-page p {
+		font-family: 'Arial';
+	}
+
+
+input[type=checkbox].css-checkbox { 
+	position: absolute;  
+	overflow: hidden;  
+	clip: rect(0 0 0 0);  
+	height:1px;  
+	width:1px;  
+	margin:-1px;  
+	padding:0; 
+	border:0; 
+}  
+
+input[type=checkbox].css-checkbox + label.css-label { 
+	font-weight: normal;
+	padding-left:20px; 
+	height:15px;  
+	display:inline-block; 
+	line-height:15px; 
+	background-repeat:no-repeat; 
+	background-position: 0 0; 
+	font-size:15px; 
+	vertical-align:middle; 
+	cursor:pointer; 
+}  
+
+input[type=checkbox].css-checkbox:checked + label.css-label { 
+	background-position: 0 -15px; 
+}  
+
+.css-label{ 
+	background-image:url(../images/lite-red-check.png); 
+}
+
+
+
+
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move {
+  -webkit-transition:all linear .1s;
+  -moz-transition:all linear .1s;
+  -o-transition:all linear .1s;
+  transition:all linear .1s;
+}
+ 
+.animate-repeat.ng-enter {
+  /*line-height:0;*/
+  opacity:0;
+  /*padding-top:0;*/
+  /*padding-bottom:0;*/
+}
+.animate-repeat.ng-enter.ng-enter-active {
+  /*line-height:20px;*/
+  /*padding:10px;*/
+  opacity:1;
+}
+ 
+.animate-repeat.ng-leave {
+  opacity:1;
+  /*line-height:20px;*/
+  /*padding:10px;*/
+}
+.animate-repeat.ng-leave.ng-leave-active {
+  opacity:0;
+  /*line-height:0;*/
+  /*padding-top:0;*/
+  /*padding-bottom:0;*/
+}
+ 
+.animate-repeat.ng-move { }
+.animate-repeat.ng-move.ng-move-active { }
+
+.animate-hide.ng-hide-add, 
+.animate-hide.ng-hide-remove {
+  -webkit-transition:all linear .8s;
+  -moz-transition:all linear .8s;
+  -o-transition:all linear .8s;
+  transition:all linear .8s;
+  display:block!important;
+}
+ 
+.animate-hide.ng-hide-add.ng-hide-add-active,
+.animate-hide.ng-hide-remove {
+  /*line-height:0;*/
+  opacity:0;
+  /*padding:0 10px;*/
+}
+ 
+.animate-hide.ng-hide-add,
+.animate-hide.ng-hide-remove.ng-hide-remove-active {
+  /*line-height:20px;*/
+  opacity:1;
+  /*padding:10px;*/
+  /*border:1px solid black;*/
+  /*background:white;*/
+}
+
+/* Angular ngcloak style --------------------------------------------- */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}

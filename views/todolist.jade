@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	div.navbar.navbar-inverse.navbar-fixed-top.bs-docs-nav
+		div.container
+			div.nav-header
+				button(class='navbar-toggle', type='button', data-toggle='collapse', data-target='.bs-navbar-collapse')
+					span(class='icon-bar')
+					span(class='icon-bar')
+					span(class='icon-bar')
+				a(class='navbar-brand nav-title', href="/") Checkbox
+			div.nav-collapse.collaspe.bs-navbar-collapse
+				ul.nav.navbar-nav.nav-items
+					li 
+						a(class="glyphicon glyphicon-list-alt", href="#/todo")  To Do
+					li
+						a(class="glyphicon glyphicon-ok", href="#/completed")  Completed
+					li
+						a(class="glyphicon glyphicon-book", href="#/about")  About
+	div
+	div(data-ng-view="")
+
+

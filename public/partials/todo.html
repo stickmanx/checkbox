@@ -1,0 +1,35 @@
+<div class="container" data-ng-controller="ToDoController">
+	<div class="row">
+		<div class='col-12'>
+			<form ng-submit='createToDo()'>
+				<fieldset>
+					<div class='form-group'>
+						<!-- <label for='toDoText'>New To Do</label> -->
+						<textarea data-ng-model='todo.item' class='form-control' type='text' name='toDoText' placeholder='Enter New To Do...'></textarea>
+					</div>
+					<div class='form-group'>
+						<button class ='btn btn-default glyphicon glyphicon-pencil' type='submit'> Create To Do </button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div> <!-- end 'to do' input form -->
+	<div class="row todo-content">
+		<div class="col-12">
+			<h2>To do Items</h2>
+			<ul class="list-group todo-items">
+				<li class="animate-hide list-group-item" data-ng-repeat="item in items" data-ng-hide="item.completed">
+				
+					<form class="pull-left">
+						<input id="{{ 'checkbox'+$index }}" class="css-checkbox" type="checkbox" data-ng-checked="item.completed" data-ng-model="item.completed" data-ng-change="toggleToDo(item)">
+						<label for="{{ 'checkbox'+$index }}" class="css-label">{{item.item}}</label>
+					</form>
+					<!-- <p class="pull-left toDotext">{{ item.item }}</p> -->
+					<!-- {{ item.completed }} -->
+					<button class="pull-right btn btn-default glyphicon glyphicon-trash" data-ng-click="deleteToDo(item)"></button>
+					<div class="clearfix"></div>
+				</li>
+			</ul>
+		</div>
+	</div> <!-- end 'to do items' -->
+</div> <!-- end container -->

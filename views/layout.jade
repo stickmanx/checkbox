@@ -1,0 +1,29 @@
+doctype 5
+html(data-ng-app="toDoApp")
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    script(src='/lib/jquery-2.0.3.min.js')
+
+    
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-glyphicons.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Frijole', type='text/css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Economica', type='text/css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Rock+Salt', type='text/css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Handlee', type='text/css')
+  body(ng-cloak)
+    block content
+
+
+    
+    script(src='/lib/underscore-min.js')
+    script(src='/lib/bootstrap.min.js')
+    script(src='/lib/angular/angular.js')
+    script(src='/lib/angular/angular-route.js')
+    script(src='/lib/angular/angular-animate.js')
+    script(src='/javascripts/app.js')
+    script(type='text/javascript', src='/javascripts/services/ItemsData.js')
+    script(src='/javascripts/controllers/toDoController.js')
+    script(src='/javascripts/controllers/completedController.js')

@@ -1,0 +1,20 @@
+<div class="container" data-ng-controller="completedController">
+	<div class="row completed-content">
+		<div class="col-12">
+			<h2>Completed Items</h2>
+			<ul class="list-group completed-items">
+				
+				<li class="animate-hide list-group-item" data-ng-repeat="completedItem in completedItems" data-ng-show="completedItem.completed" >
+					<!-- {{ item.completed = true }} -->
+					<form class="pull-left">
+						<input id="{{ 'checkbox'+$index }}" class="css-checkbox" type="checkbox" data-ng-checked="completedItem.completed" data-ng-model="completedItem.completed" data-ng-change="toggleToDo(completedItem)">
+						<label for="{{ 'checkbox'+$index }}" class="css-label">{{ completedItem.item }}</label>
+					</form>
+					<!-- {{ completedItem.completed }} -->
+					<button class="pull-right btn btn-default glyphicon glyphicon-trash" data-ng-click="deleteToDo(completedItem)"></button>
+					<div class="clearfix"></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
