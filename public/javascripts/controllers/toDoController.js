@@ -14,7 +14,7 @@ toDoApp.controller('ToDoController',
 		$scope.createToDo = function() {
 			
 			// client side, determine whether the to do item has been defined and is not blank
-			if($scope.todo != '') {
+			if($scope.todo === '' || $scope.todo === 'undefined') {
 				console.log("error");
 			} else {
 				console.log($scope.todo);
