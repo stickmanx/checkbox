@@ -8,8 +8,6 @@ var express = require('express')
   , http = require('http')
   , path = require('path');
 
-var expressValidator = require('express-validator');
-
 var todolist = require('./routes/todolist');
 require("./db.js").createConnection(); // connect to database
 
